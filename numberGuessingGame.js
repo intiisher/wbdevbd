@@ -59,6 +59,7 @@
                 alert('Player 1 is The Winner');
             } else {
                 count1++;
+                alert(`Wrong Guess! You can try ${3-count1} more times.`);
                 if (count1 == 3) {
                     player1Btn.setAttribute('disabled', 'disabled');
                     alert('Player1 Can\'t try anymore. Maximum trying 3 reached. Please reset the game.')
@@ -77,6 +78,7 @@
                 alert('Player 2 is The Winner');
             } else {
                 count2++;
+                alert(`Wrong Guess! You can try ${3-count2} more times.`);
 
                 if (count2 == 3) {
                     player1Btn.setAttribute('disabled', 'disabled');
